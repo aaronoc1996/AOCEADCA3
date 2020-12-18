@@ -626,3 +626,5 @@ C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\AOCEADCA3.cspro
 C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\AOCEADCA3.dll
 C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\ref\AOCEADCA3.dll
 C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\AOCEADCA3.pdb
+C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\RazorDeclaration\Pages\TopScorer.razor.g.cs
+C:\Users\Aaron\source\repos\AOCEADCA3\AOCEADCA3\obj\Debug\net5.0\Razor\Pages\TopScorer.razor.g.cs

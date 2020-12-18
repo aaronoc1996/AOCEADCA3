@@ -4,21 +4,22 @@
 {
 
     <p>Calling the API has run into a problem.</p>
-    <p>A reminder that the API can only make 10 requests per minute.</p>
+    <p> This API can only make 10 requests per minute try again.</p>
 
 }
 else
 {
     <div class="mb-2 p-3">
-        Choose a country's domestic league you'd like to see the results for:
-        <select class="form-control" @bind="League" @onclick="@GetDataAsync">
-            <option selected disabled value="-1"> Choose a Football League!</option>
+        Choose a  league you'd like to see the table for:
+        <select class="form-control" @bind="league" @onclick="@GetDataAsync">
+            <option selected disabled value="-1"> Choose a League!</option>
             <option value=PL> English Premier League</option>
+            <option value=ELC> Championship</option>
             <option value=BL1> German Bundesliga</option>
             <option value=PD> Spanish La Liga</option>
             <option value=SA> Italian Serie A</option>
             <option value=FL1> French Ligue 1</option>
-            <option value=ELC> Championship</option>
+
         </select>
     </div>
 
@@ -46,7 +47,7 @@ else
                     <tr>
                         <td>@row.position</td>
                         <td>
-                            <img src=@row.team.crestUrl style="width:2.3em; height:3em;"> &#8203; @row.team.name
+                            <img src=@row.team.crestUrl style="width:2em; height:3em;"> &#8203; @row.team.name
                         </td>
                         <td>@row.playedGames</td>
                         <td>@row.won</td>

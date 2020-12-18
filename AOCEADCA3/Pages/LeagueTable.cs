@@ -9,21 +9,21 @@ namespace AOCEADCA3.Pages
 {
         public partial class LeagueTable : ComponentBase
         {
-            private Root Main;
-            private string ErrorMessage;
-            private string League = "PL";
+            private FootballData Main;
+            private string errorMessage;
+            private string league = "PL";
 
             private async Task GetDataAsync()
             {
                 try
                 {
-                    string uri = "https://api.football-data.org/v2/competitions/" + League + "/standings?standingType=TOTAL";
-                    Main = await Http.GetJsonAsync<Root>(uri);
-                    ErrorMessage = String.Empty;
+                    string uri = "https://api.football-data.org/v2/competitions/" + league + "/standings?standingType=TOTAL";
+                    Main = await Http.GetJsonAsync<FootballData>(uri);
+                    errorMessage = String.Empty;
                 }
                 catch (Exception e)
                 {
-                    ErrorMessage = e.Message;
+                    errorMessage = e.Message;
                 }
             }
 

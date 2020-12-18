@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AOCEADCA3", "AOCEADCA3\AOCE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA1F8812-E421-4ABA-A7C9-A72A9D9546BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EADCA3UnitTett1", "EADCA3UnitTett1\EADCA3UnitTett1.csproj", "{ECCB9F41-2A66-4A82-A957-A7E90E605E42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{15CE7F78-9908-4006-98E3-4EBC0012F01B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15CE7F78-9908-4006-98E3-4EBC0012F01B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15CE7F78-9908-4006-98E3-4EBC0012F01B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECCB9F41-2A66-4A82-A957-A7E90E605E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECCB9F41-2A66-4A82-A957-A7E90E605E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECCB9F41-2A66-4A82-A957-A7E90E605E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECCB9F41-2A66-4A82-A957-A7E90E605E42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

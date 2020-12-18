@@ -1,0 +1,58 @@
+﻿@page "/TopScorer"
+@inject HttpClient Http
+@if (Main == null)
+{
+
+    <p>the API has found a problem when called.</p>
+    <p>this API can only make 10 requests per minute. try again</p>
+
+}
+else
+{
+    <div class="mb-2 p-3">
+        Choose a  league you'd like to see the the Top Scorers for:
+        <select class="form-control" @bind="league" @onclick="@GetDataAsync">
+            <option selected disabled value="-1"> Choose a Football League!</option>
+            <option value=PL> English Premier League</option>
+            <option value=BL1> German Bundesliga</option>
+            <option value=PD> Spanish La Liga</option>
+            <option value=SA> Italian Serie A</option>
+            <option value=FL1> French Ligue 1</option>
+            <option value=ELC> Championship</option>
+        </select>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th> name</th>
+                <th>Position</th>
+                <th>Nationality</th>
+                <th>Team</th>
+                <th>Scored</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var scorer in Main.scorers)
+            {
+                
+            <tr>
+                <td>@scorer.name</td>
+                <td>@scorer.position</td>
+                <td>@scorer.nationality</td>
+                <td>@scorer.team</td>
+                <td>@scorer.numberOfGoals</td>
+
+
+     
+                
+
+            </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+}
+
